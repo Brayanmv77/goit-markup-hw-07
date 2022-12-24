@@ -15,61 +15,55 @@
     />
   </head>
   <body>
-    <header>
-      <section class="container header-menu">
-        <a class="logo top" href="index.html">WebStudio</a>
-        <nav>
-          <ul class="header-links">
-            <li class="header-element">
-              <a class="header-link" href="index.html">Estudio</a>
+    <header class="header">
+      <div class="container">
+        <section class="header__menu">
+          <a class="logo header__logo" href="index.html">WebStudio</a>
+          <nav class="header__nav">
+            <a class="header__link" href="index.html">Estudio</a>
+            <a class="header__link" href="#portfolio">Portafolio</a>
+            <a class="header__link" href="#contacto">Contactos</a>
+          </nav>
+          <ul class="header__contact-information">
+            <li class="header__contact">
+              <a class="header__link header__contact-link" href="mailto:info@devstudio.com"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="12"
+                  fill="none"
+                >
+                  <path
+                    fill="#757575"
+                    d="M14.5 0h-13C.67 0 0 .67 0 1.5v9c0 .83.67 1.5 1.5 1.5h13c.83 0 1.5-.67 1.5-1.5v-9c0-.83-.67-1.5-1.5-1.5Zm0 1a.5.5 0 0 1 .2.04L8 6.84l-6.7-5.8A.5.5 0 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.1l6.67 5.78a.5.5 0 0 0 .66 0L15 2.1v8.4a.5.5 0 0 1-.5.5Z"
+                  />
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="header-element">
-              <a class="header-link" href="#portafolio">Portafolio</a>
-            </li>
-            <li class="header-element">
-              <a class="header-link" href="#contacto">Contactos</a>
+            <li class="header__contact">
+              <a class="header__link header__contact-link" href="tel:+525555296000">
+                <svg
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
+                    fill="#757575"
+                  />
+                </svg>
+                +52 55 5529 6000
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="contact-information">
-          <li class="header-contact">
-            <a class="link-contact" href="mailto:info@devstudio.com"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="12"
-                fill="none"
-              >
-                <path
-                  fill="#757575"
-                  d="M14.5 0h-13C.67 0 0 .67 0 1.5v9c0 .83.67 1.5 1.5 1.5h13c.83 0 1.5-.67 1.5-1.5v-9c0-.83-.67-1.5-1.5-1.5Zm0 1a.5.5 0 0 1 .2.04L8 6.84l-6.7-5.8A.5.5 0 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.1l6.67 5.78a.5.5 0 0 0 .66 0L15 2.1v8.4a.5.5 0 0 1-.5.5Z"
-                />
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact">
-            <a class="link-contact" href="tel:+525555296000">
-              <svg
-                width="10"
-                height="16"
-                viewBox="0 0 10 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
-                  fill="#757575"
-                />
-              </svg>
-              +52 55 5529 6000
-            </a>
-          </li>
-        </ul>
-      </section>
+        </section>
+      </div>
     </header>
     <main>
-      <section class="container" id="portafolio">
+      <section class="container" id="portfolio">
         <ul class="buttons">
           <li>
             <button type="button" class="class-button">Todo</button>

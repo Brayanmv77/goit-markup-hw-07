@@ -44,18 +44,12 @@ ul {
   margin-left: auto;
 }
 
-.section {
-  height: 648px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* ++++++++++++++++ Header Styles ++++++++++++++++  */
 header {
   border-bottom: 1px solid #ececec;
 }
 
-.header-menu {
+.header__menu {
   height: 80px;
   display: flex;
   align-items: center;
@@ -72,11 +66,11 @@ header {
   font-weight: 700;
 }
 
-.logo.top {
+.header__logo {
   margin-right: 91px;
 }
 
-.header-links {
+.header__nav {
   width: 281px;
   padding: 0px;
   display: flex;
@@ -86,50 +80,40 @@ header {
   margin-right: 344px;
 }
 
-.header-link {
+.header__link {
   color: inherit;
   text-decoration: none;
   font-weight: 500;
   line-height: 1em;
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-link:active {
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
   color: var(--brand-color);
 }
 
-.header-link::after {
-  content: "";
-  display: none;
-  width: 48px;
-  height: 4px;
-  background-image: url(./images/line.png);
-  background-size: contain;
-  position: relative;
-  top: 32px;
-}
-
-.header-link:hover::after {
+.header__link:hover::after {
   display: block;
 }
 
-.contact-information {
+.header__contact-information {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 30px;
 }
 
-.header-contact {
+.header__contact {
   color: var(--links-color);
 }
 
-.link-contact {
+.header__contact:hover svg path {
+  fill: var(--brand-color);
+}
+
+.header__contact-link {
   color: inherit;
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1em;
 
   display: flex;
   justify-content: flex-end;
@@ -137,12 +121,6 @@ header {
   gap: 10px;
 }
 
-.header-contact .link-contact:hover svg path {
-  fill: var(--brand-color);
-}
-.header-contact .link-contact:hover {
-  color: var(--brand-color);
-}
 
 /* ++++++++++++++++ Main Styles ++++++++++++++++ */
 /* ----------------------------- Estudio Styles ----------------------------- */
@@ -159,7 +137,7 @@ header {
   border: 1px solid;
 }
 
-.title-text {
+.title__text {
   color: #fff;
   font-weight: 900;
   font-size: 44px;
@@ -175,7 +153,7 @@ header {
   margin-left: auto;
 }
 
-.title-button {
+.title__button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -234,7 +212,7 @@ header {
   z-index: 3;
 }
 
-.modal-close {
+.modal__close {
   font-weight: 500;
   background-color: #fff;
   width: 30px;
@@ -248,7 +226,7 @@ header {
   right: 8px;
 }
 
-.modal-close:hover {
+.modal__close:hover {
   color: var(--brand-color);
 }
 
@@ -260,7 +238,7 @@ header {
   position: relative;
 }
 
-.form-title {
+.form__title {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
@@ -414,9 +392,9 @@ header {
   cursor: pointer;
 }
 
-/* _______ ________ Table Section _______ ________ */
+/* _______ ________ Benefits Section _______ ________ */
 
-.attribute-table {
+.benefits {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -425,25 +403,7 @@ header {
   margin-bottom: 99px;
 }
 
-.attribute {
-  font-weight: 700;
-  line-height: 1em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.description {
-  color: #757575;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  width: 270px;
-}
-
-.table-icon {
+.benefits__icon {
   background: var(--background-color2);
   padding: 25px 102px;
   max-width: 270px;
@@ -452,9 +412,27 @@ header {
   border-radius: 4px;
 }
 
-/* _______ ________A que nos dedicamos PICTURES _______ ________*/
+.benefits__title {
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+}
 
-.product-images {
+.benefits__text {
+  color: #757575;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  width: 270px;
+}
+
+/* _______ ________ Samples _______ ________*/
+
+.sample__products {
   display: flex;
   justify-content: space-between;
   margin-top: 55px;
@@ -463,11 +441,11 @@ header {
   margin-right: auto;
 }
 
-.imagenes {
+.sample__images {
   position: relative;
 }
 
-.imagenes-bar {
+.sample__description {
   color: #fff;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700px;
@@ -482,19 +460,21 @@ header {
   width: 373px;
   height: 70px;
 }
-/* _______ ________ Nuestro Equipo PICTURES _______ ________ */
+/* _______ ________ Nuestro Equipo  _______ ________ */
 
-.cartas {
+.team-section {
   background-color: var(--background-color2);
   height: 708px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.cards {
+.team {
   display: flex;
   justify-content: space-between;
 }
 
-.card {
+.team__card {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -505,7 +485,7 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.name {
+.team__member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188em;
@@ -515,7 +495,7 @@ header {
   margin-bottom: 10px;
 }
 
-.task {
+.team__description {
   color: #757575;
   font-size: 16px;
   line-height: 1.188em;
@@ -524,14 +504,14 @@ header {
   margin-bottom: 16px;
 }
 
-.icons-card {
+.team__icons {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 30px;
   gap: 10px;
 }
 
-.icon-card {
+.team__icon {
   fill: #afb1b8;
   border-radius: 25px;
   height: 44px;
@@ -540,7 +520,7 @@ header {
   padding-top: 12px;
 }
 
-.icon-card:hover {
+.team__icon:hover {
   fill: #fff;
   background: var(--brand-color);
   cursor: pointer;
@@ -575,6 +555,10 @@ header {
 .client:focus,
 .client:active {
   border-color: var(--brand-color);
+}
+
+.client__icon {
+  fill: var(--brand-color);
 }
 
 /* ----------------------------- Portafolio Styles ----------------------------- */
