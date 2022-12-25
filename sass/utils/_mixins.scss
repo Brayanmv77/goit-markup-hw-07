@@ -11,3 +11,14 @@
     justify-content: $justify-content;
     align-items: $aling-items;
 }
+
+@mixin margin-auto($left: auto, $right: auto) {
+    margin-right: $right;
+    margin-left: $left; 
+}
+
+@mixin position-top-left($position: relative, $top: 0, $left: 0) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
