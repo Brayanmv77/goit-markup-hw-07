@@ -28,8 +28,8 @@ h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 2.625em;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
 }
@@ -45,7 +45,7 @@ ul {
 }
 
 /* ++++++++++++++++ Header Styles ++++++++++++++++  */
-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
