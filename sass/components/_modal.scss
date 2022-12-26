@@ -39,7 +39,6 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    @include flex-container(row, center, center);
   }
 
   &__close:hover {
