@@ -627,4 +627,99 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 8px;
+  margin-top: 106px;
+  margin-bottom: 50px;
+}
+.button__menu {
+  background-color: rgb(245, 244, 250);
+  border: rgb(245, 244, 250);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: 128px;
+  height: 38px;
+}
+.button__menu:hover, .button__menu:focus, .button__menu:active {
+  background-color: rgb(33, 150, 243);
+  color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 82px;
+}
+
+.product {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 372px;
+  max-height: 404px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product:hover, .product:focus, .productactive {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+.product__image {
+  position: relative;
+  overflow: hidden;
+}
+.product__information {
+  background-color: rgb(33, 150, 243);
+  opacity: 0.9;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  transform: translateY(102%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product:hover .product__information {
+  transform: translateY(0);
+}
+.product__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  margin: 20px 24px 4px 24px;
+}
+.product__type {
+  color: #757575;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 24px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
